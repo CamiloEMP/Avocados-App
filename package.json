@@ -1,5 +1,5 @@
 {
-  "name": "avocados-app",
+  "name": "rick-morty-api",
   "private": true,
   "scripts": {
     "dev": "next dev",
