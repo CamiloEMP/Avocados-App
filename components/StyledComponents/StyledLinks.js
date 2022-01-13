@@ -8,15 +8,15 @@ export const StyledLink = styled.a`
   font-size: 20px;
   text-align: center;
   border: 3px solid ${colors.primary};
-  border-radius: 30px;
+  border-radius: 5px;
   cursor: pointer;
   padding: 8px;
-  width: 200px;
+  width: ${({ width }) => width || '200px'};
+  background-color: inherit;
   color: ${({ theme }) => theme === 'dark' ? dark.text : light.text};
   &:hover {
-    transition: background 500ms ease;
-    background-color: inherit;
-    border: 1px solid green;
-    color: #000000;
+    transition: background 300ms, color 300ms;
+    background-color: ${colors.primary};
+    color: ${({ theme }) => theme === 'dark' ? light.text : dark.text};
   }
 `

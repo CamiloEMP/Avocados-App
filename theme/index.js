@@ -14,7 +14,7 @@ export const light = {
 
 export const colors = {
   primary: '#97ce4c',
-  secundary: '#8B94A3'
+  secundary: '#E89242FF'
 }
 export const GlobalStyle = createGlobalStyle`
     html,

@@ -3,10 +3,12 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: auto;
-  flex-direction: ${({ fColumn }) => fColumn || null};
+  flex-direction: ${({ column }) => column};
+  justify-content: ${({ justifyContent }) => justifyContent || 'center'};
+  flex-wrap: ${({ flexWrap }) => flexWrap};
   width: ${({ width }) => width || '100%'};
-  flex-wrap: ${({ wrap }) => wrap || null}; 
-  padding: ${({ padding }) => padding || null};
+  padding: ${({ padding }) => padding};
+  margin: ${({ margin }) => margin};
+  gap: ${({ gap }) => gap};
+  height: ${({ height }) => height}
 `
