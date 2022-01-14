@@ -1,15 +1,11 @@
 import { IconMoon, IconSun } from './StyledComponents/StyledIcons'
-
+import { toggleTheme } from '../constants/toogleTheme'
 export const SwitchTheme = ({ theme, setTheme }) => {
-  const toggleTheme = () => {
-    theme === 'light' ? setTheme('dark') : setTheme('light')
-  }
-
   return (
     <>
       {theme === 'light'
-        ? <IconMoon onClick={toggleTheme} />
-        : <IconSun onClick={toggleTheme} />
+        ? <IconMoon onClick={() => toggleTheme(theme, setTheme)} />
+        : <IconSun onClick={() => toggleTheme(theme, setTheme)} />
       }
     </>
   )

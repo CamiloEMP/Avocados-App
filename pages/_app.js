@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { NavBar } from '../components/NavBar'
 import { SwitchTheme } from '../components/SwitchTheme'
+import Head from 'next/head'
 
 import { ThemeProvider } from 'styled-components'
 import { dark, GlobalStyle, light } from '../theme'
@@ -13,7 +14,10 @@ function MyApp ({ Component, pageProps }) {
       <NavBar theme={theme}>
         <SwitchTheme theme={theme} setTheme={setTheme}/>
       </NavBar>
-      <Component {...pageProps} theme={theme}/>
+      <Head>
+        <title>API Rick y Morty</title>
+      </Head>
+      <Component {...pageProps} theme={theme} setTheme={setTheme} />
     </ThemeProvider>
 
   )

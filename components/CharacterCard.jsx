@@ -6,9 +6,9 @@ import { TextWrapper } from './StyledComponents/StyledText'
 import { colors } from '../theme'
 
 export const CharacterCard = ({ item, theme }) => {
-  const { name, species, status, location, image } = item
+  const { name, species, status, location, image, id } = item
   return (
-    <Link href="/">
+    <Link href={`/characters/${id}`}>
       <Card width="340px">
         <TextWrapper
           color={colors.primary}
@@ -19,7 +19,7 @@ export const CharacterCard = ({ item, theme }) => {
         >
           {name}
         </TextWrapper>
-        <Image src={image} width={300} height={300} preload="true" />
+        <Image src={image} width={300} height={320} alt={`image ${name}`} />
         <TextWrapper
           as="div"
           display="flex"

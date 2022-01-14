@@ -16,7 +16,7 @@ export default function Home ({ theme }) {
             <StyledLink width='240px' theme={theme}>Contact me</StyledLink>
           </Link>
           <Link href='/characters'>
-            <StyledLink width='240px' theme={theme}>Watch Characters</StyledLink>
+            <StyledLink className='caa' width='240px' theme={theme}>Watch Characters</StyledLink>
           </Link>
         </Container>
       </Container>

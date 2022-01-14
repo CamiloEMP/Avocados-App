@@ -3,7 +3,7 @@ import { colors } from '../../theme'
 
 export const Card = styled.a`
   width: ${({ width }) => width};
-  height: 500px;
+  height: 540px;
   cursor: pointer;
   text-align: center;
   padding: 8px;

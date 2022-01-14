@@ -7,8 +7,8 @@ export const Container = styled.div`
   justify-content: ${({ justifyContent }) => justifyContent || 'center'};
   flex-wrap: ${({ flexWrap }) => flexWrap};
   width: ${({ width }) => width || '100%'};
+  height: ${({ height }) => height};
   padding: ${({ padding }) => padding};
   margin: ${({ margin }) => margin};
   gap: ${({ gap }) => gap};
-  height: ${({ height }) => height}
 `
