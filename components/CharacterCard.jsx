@@ -28,7 +28,7 @@ export const CharacterCard = ({ item, theme }) => {
           margin="5px 0 0 10px"
           color={colors.secundary}
         >
-          Especie:
+          Specie:
           <TextWrapper colorTheme={theme} margin="0 0 0 8px" bold="700">
             {species}
           </TextWrapper>
@@ -41,7 +41,7 @@ export const CharacterCard = ({ item, theme }) => {
           margin="5px 0 0 10px"
           color={colors.secundary}
         >
-          Estado:
+          State:
           <TextWrapper colorTheme={theme} margin="0 0 0 8px" bold="700">
             {status}
           </TextWrapper>
@@ -54,7 +54,7 @@ export const CharacterCard = ({ item, theme }) => {
           bold="900"
           color={colors.secundary}
         >
-          Localización:
+          Location:
           <TextWrapper colorTheme={theme} margin="0 0 0 8px" bold="700">
             {location.name}
           </TextWrapper>

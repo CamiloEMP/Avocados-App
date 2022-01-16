@@ -77,8 +77,8 @@ const characters = ({ data, theme }) => {
   }
 
   return (
-    <div>
-      <Container margin='30px 0 0'>
+    <>
+      <Container as='section' margin='30px 0 0'>
         <form onSubmit={handleSubmit} style={{ textAlign: 'center' }}>
           <Input name="character" autoComplete="off" placeholder='Search a character ...' theme={theme} />
           <StyledLink width="150px" theme={theme} as="button" type="submit">
@@ -97,7 +97,7 @@ const characters = ({ data, theme }) => {
           <CharacterCard theme={theme} key={item.id} item={item} />
         ))}
       </Container>
-      <Container flexWrap="wrap" gap="15px" margin="0 0 30px">
+      <Container flexWrap="wrap" gap="15px" margin="0 0 30px" padding='0 0 15px'>
         {results && (
           <StyledLink onClick={handleNextPage} theme={theme} as="button">
           Ver más
@@ -105,7 +105,7 @@ const characters = ({ data, theme }) => {
         )}
         <ScrollToTop className="button-up" smooth component={<IconRowUp />} />
       </Container>
-    </div>
+    </>
   )
 }
 

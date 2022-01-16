@@ -15,6 +15,7 @@ function MyApp ({ Component, pageProps }) {
         <SwitchTheme theme={theme} setTheme={setTheme}/>
       </NavBar>
       <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>API Rick y Morty</title>
       </Head>
       <Component {...pageProps} theme={theme} setTheme={setTheme} />

@@ -19,12 +19,18 @@ export const GlobalStyle = createGlobalStyle`
     body {
       padding: 0;
       margin: 0;
+      height: 100%;
       background: ${({ theme }) => theme.body};
       color: ${({ theme }) => theme.text};
       font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans,  sans-serif;
       transition: all 200ms linear;
       scroll-behavior: smooth;
+      position: relative;
+    }
+
+    #__next {
+      height: 100%;
     }
 
     a {
